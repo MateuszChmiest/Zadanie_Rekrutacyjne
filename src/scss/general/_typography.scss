@@ -1,0 +1,30 @@
+* {
+    font-family: $font-family;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container {
+    @include small {
+      max-width: 480px;
+    }
+
+    @include medium {
+      max-width: 768px;
+    }
+
+    @include large {
+      max-width: 976px;
+    }
+
+    @include xlarge {
+      max-width: 1440px;
+    }
+  }
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
