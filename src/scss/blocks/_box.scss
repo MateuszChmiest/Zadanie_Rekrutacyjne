@@ -1,45 +1,78 @@
 .box {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem 0 2rem;
-    margin-top: 6rem;
+	display: flex;
+	flex-direction: column;
+	padding: 0 2rem 0 2rem;
+	margin-top: 6rem;
 
-    @include large {
-        flex-direction: unset;
-        justify-content: space-between;
-    }
+	@include large {
+		flex-direction: unset;
+		justify-content: space-between;
+	}
 
-    &__image {
-        img {
-            width: 100%;
-        }
-    }
+	&__image {
+		max-width: 100%;
+        -webkit-box-shadow: 11px 12px 15px -7px rgba(109, 109, 115, 1);
+        -moz-box-shadow: 11px 12px 15px -7px rgba(109, 109, 115, 1);
+        box-shadow: 11px 10px 17px -7px rgba(109, 109, 115, 1);
+	}
 
-    &__content {
-        text-align: center;
+	&__content {
+		text-align: center;
 
-        @include large {
-            text-align: left;
-            width: 380px;
-            margin-left: 5.9375rem;
-        }
+		@include large {
+			text-align: left;
+			width: 580px;
+			margin-left: 5.9375rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+		}
 
-        h1 {
-            color: $color-dark;
-            font-size: 2.625rem;
-            font-weight: 700;
-            margin-top: 1.5rem;
-        }
+        @include xlarge {
+			width: 700px;
+		}
 
-        p {
-            color: $color-dark;
-            font-weight: 300;
-            line-height: 1.5rem;
-            margin: 1.5rem 0 1.5rem 0;
+
+		h1 {
+			color: $color-dark;
+			font-size: 2rem;
+			font-weight: 700;
+			margin-top: 1.5rem;
+
+            @include medium {
+                font-size: 2.25rem;
+            }
 
             @include large {
-                margin: 2rem 0 2rem 0;
+                font-size: 2.25rem;
+                margin-top: 0;
+            } 
+
+            @include large {
+                font-size: 2.75rem;
+            } 
+		}
+
+		p {
+			color: $color-dark;
+			font-weight: 300;
+			line-height: 1.5rem;
+			margin: 1.5rem 0 1.5rem 0;
+            font-size: 0.75rem;
+
+            @include medium {
+                font-size: 0.925rem;
             }
-        }
-    }
+
+            @include large {
+                font-size: 1rem;
+            } 
+
+			@include xlarge {
+				margin: 2rem 0 2rem 0;
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+			}
+		}
+	}
 }
