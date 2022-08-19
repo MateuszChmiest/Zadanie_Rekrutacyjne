@@ -27,4 +27,14 @@
 		background-color: $color-primary;
 		color: $color-white;
 	}
+
+    &__popup {
+        width: 120px;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        margin-top: 1.25rem;
+
+        @include medium {
+            margin-top: 0.75rem;
+        }
+    }
 }

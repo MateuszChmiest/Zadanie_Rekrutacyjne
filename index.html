@@ -42,7 +42,16 @@
                 <h1>Lorem Ipsum</h1>
                 <p>Infinitely scalable, feature-rich and cloud-native data management and protection for modern and
                     legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-                <button type="button" class="btn btn__primary">Button</button>
+                <button type="button" class="btn btn__primary" id="counterButton">Button</button>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup__overlay"></div>
+            <div class="popup__container" id="popup-label">
+                <h1>Alert!</h1>
+                <p>You have clicked <span class="popup__container--counter" id="counter">0 times</span> to related button.</p>
+                <img src="./images/icon-close.png" class="popup__container--close" id="close" alt="close"/>
+                <button type="button" class="btn btn__popup" id="resetButton">Reset</button>
             </div>
         </div>
     </main>
