@@ -67,15 +67,11 @@
 }
 
 .active {
-	visibility: visible;
+	visibility: visible !important;
 }
 
 .active-label {
 	opacity: 1;
 	top: 50%;
 	transition: 0.5s;
-}
-
-.hidden {
-	visibility: hidden;
 }

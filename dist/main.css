@@ -594,17 +594,13 @@ main {
 }
 
 .active {
-  visibility: visible;
+  visibility: visible !important;
 }
 
 .active-label {
   opacity: 1;
   top: 50%;
   transition: 0.5s;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 .btn {
@@ -634,6 +630,7 @@ main {
   color: #FFFFFF;
 }
 .btn__popup {
+  visibility: hidden;
   width: 120px;
   padding: 0.5rem 2rem 0.5rem 2rem;
   margin-top: 1.25rem;
