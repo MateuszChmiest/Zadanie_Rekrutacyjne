@@ -603,6 +603,10 @@ main {
   transition: 0.5s;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .btn {
   border-radius: 2rem;
   border: none;

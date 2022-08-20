@@ -1,17 +1,21 @@
 const popup = document.querySelector('.popup')
 const button = document.getElementById('counterButton');
 const close = document.getElementById('close');
-const popupLabel = document.getElementById('popup-label')
+const popupLabel = document.getElementById('popup-label');
+const reset = document.getElementById('resetButton');
 
-const show = () => {
+const handleToggle = () => {
     popup.classList.toggle('active');
     popupLabel.classList.toggle('active-label')
 }
 
-button.addEventListener('click', () => {
-    show();
-})
+const handleClose = (event) => {
+    if (event.target.closest('#popup-label')) {
+        return;
+    }
+    handleToggle()
+}
 
-close.addEventListener('click', () => {
-    show();
-})
+button.addEventListener('click', handleToggle);
+close.addEventListener('click', handleToggle);
+popup.addEventListener('click', handleClose);
