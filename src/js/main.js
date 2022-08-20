@@ -24,7 +24,7 @@ button.addEventListener("click", () => {
 	count++;
     localStorage.setItem('count', count);
     counter.innerText = `${count} times`;
-    count >= 5 ? reset.classList.add("active") : reset.classList.remove("active")
+    count > 5 ? reset.classList.add("active") : reset.classList.remove("active")
 });
 
 
